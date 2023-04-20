@@ -1,4 +1,4 @@
-# python-project (strings, conditional, and logical flow, functions, logging)
+# Python-project (strings, conditional, and logical flow, functions, logging)
 This project consist of making a 'choose your own adventure' story/game that executes in the console.
 
 The students can use whatever methods necessary to make their console program work, but we need to at least see functions, if/else, and 
