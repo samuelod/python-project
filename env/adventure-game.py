@@ -283,6 +283,54 @@ def room_4():
 def start():
     begin()
 
+def win():
+    global deadWalker
+    global alpha_deadWalker
+    global gun 
+
+    deadWalker = True
+    alpha_deadWalker = True
+    gun = False
+    print("Ѱ Ѱ Ѱ Ѱ Ѱ Ѱ Ѱ Ѱ Ѱ Ѱ Ѱ Ѱ Ѱ Ѱ Ѱ Ѱ Ѱ Ѱ Ѱ Ѱ Ѱ Ѱ Ѱ Ѱ Ѱ")
+    print("YOU WIN!")
+    print("You fly off into the sunset on a helicopter")
+    print("Do you want to play again? (y/n)")
+
+    choice = ""
+    while choice != "y" and choice != "n":
+        choice("> ")
+        if choice == "y":
+            start()
+        elif choice == "n":
+            exit(0) 
+
+def game_over():
+    global deadWalker
+    global alpha_deadWalker
+    global gun 
+
+    deadWalker = True
+    alpha_deadWalker = True 
+    gun = False
+    print("ƔƔƔƔƔƔƔƔƔƔƔƔƔƔƔƔƔƔƔƔƔƔƔƔƔƔƔƔƔƔƔƔƔƔƔƔƔƔƔƔƔƔƔƔƔƔƔƔƔƔƔƔ")
+    print("GAME OVER")
+    print("You are now a Deadwalker")
+    print("Do you want ot play again? (y/n)")
+
+    choice = ""
+    while choice != "y" and choice != "n":
+        choice = input("> ")
+        if choice == "y":
+            start()
+        elif choice == "n":
+            exit(0)
+
+start()
+
+
+
+    
+
 
 
 
